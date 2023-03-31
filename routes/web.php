@@ -40,6 +40,7 @@ Route::controller(ProfileController::class)->prefix('admin')->name('admin.')->mi
     Route::get('profile/edit', 'edit')->name('profile.edit');
     Route::post('profile/edit', 'update')->name('profile.update');
     Route::get('profile/delete', 'delete')->name('profile.delete');
+    Route::get('profile', 'index')->name('profile.index');
 });
 
 
